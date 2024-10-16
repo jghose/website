@@ -1,0 +1,407 @@
+/* Global Styles */
+body {
+    font-family: 'Inter', sans-serif;  /* Modern and sleek font */
+    background-color: #121212; /* Dark mode by default for a modern look */
+    color: #e0e0e0; /* Soft white for readability */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Typography */
+h1, h2 {
+    font-weight: 800; /* Stronger, bold font for headers */
+    color: #ffffff; /* Bright white for contrast */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0;
+}
+
+p, li {
+    font-weight: 400;
+    line-height: 1.8;
+    color: #b5b5b5; /* Softer white for long text readability */
+}
+
+a {
+    color: #ff6f61; /* Accent color for interactive elements */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff8567; /* Slightly brighter hover effect */
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(17, 24, 39, 0.85), rgba(31, 41, 55, 0.85)), url('hero-background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 4.5rem; /* Larger, bolder typography */
+    color: #ffffff;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    color: #d1d1d1;
+}
+
+.hero .btn-custom {
+    background-color: #ff6f61; /* Bright accent for buttons */
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px; /* Full round buttons */
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.hero .btn-custom:hover {
+    background-color: #ff8567;
+    transform: translateY(-5px); /* Hover effect for buttons */
+}
+
+/* Sections */
+section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.125rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+    color: #d1d1d1;
+}
+
+/* Project Cards */
+.project-cards {
+    background: linear-gradient(135deg, #1f2937, #2a2d34); /* Modern gradient background */
+    padding: 40px 0; /* Padding around the cards section */
+}
+
+.project-card {
+    background-color: rgba(31, 41, 55, 0.9); /* Slightly transparent dark background */
+    color: #e0e0e0;
+    border-radius: 15px; /* Modern rounded edges */
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    margin-bottom: 30px; /* Space between cards */
+}
+
+.project-card:hover {
+    transform: translateY(-15px); /* Floating card effect */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+    background-color: #111827; /* Darker footer background */
+    color: #a0aec0; /* Soft grey */
+    text-align: center;
+}
+
+footer a {
+    color: #ff6f61; /* Footer links in accent color */
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #ff8567;
+}
+
+/* Dark Mode Specific Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode footer {
+    background-color: #1a1a1a !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff6f61; /* Custom accent scrollbar */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ff8567;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.25rem;
+    }
+
+    .hero .btn-custom {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #0f172a; /* Dark navy background for a sleek, modern look */
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth background color change */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f39c12; /* Bold accent color for brand */
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #e67e22; /* Subtle hover color for brand */
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #ffffff; /* White links */
+    margin-left: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #f39c12; /* Underline on hover */
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover::after {
+    opacity: 1;
+    transform: scaleX(1); /* Smooth underline effect */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f39c12; /* Change link color on hover */
+}
+
+/* Navbar Toggler */
+.navbar-toggler {
+    background-color: #ff8567;
+    border: none;
+}
+
+/* Responsive Navbar */
+@media (max-width: 992px) {
+    .navbar-nav {
+        background-color: #0f172a;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+}
+
+/* About Section Design */
+.about {
+    background-color: #121212; /* Dark background for modern look */
+    color: white; /* White text for readability */
+    padding: 40px 0; /* Adjust padding as needed */
+}
+
+.about h2 {
+    font-size: 2.5rem; /* Large font size for the heading */
+    color: #f39c12; /* Use a vibrant color for the heading */
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+.about p {
+    text-align: justify;
+    font-size: 1.2rem; /* Modern font size for paragraph */
+    line-height: 1.6; /* Improved readability */
+    max-width: 800px; /* Limit the width of the paragraph for better readability */
+    margin: 0 auto; /* Center align the paragraph */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #1f2937; /* Matches dark tone of other sections */
+    color: #e0e0e0;
+    padding: 60px 0; /* Adjust padding for proper spacing */
+}
+
+.contact h2 {
+    color: #f39c12; /* Consistent heading color */
+    font-size: 2.5rem;
+}
+
+.contact .form-control {
+    background-color: #2d3748; /* Form control background matching dark theme */
+    border: 1px solid #4a5568; /* Border color matching the dark mode */
+    border-radius: 5px;
+    padding: 10px;
+    color: #e0e0e0; /* Input text color */
+}
+
+.contact .form-control::placeholder {
+    color: #a0aec0; /* Subtle placeholder color */
+}
+
+.contact .form-control:focus {
+    border-color: #f39c12; /* Accent color on focus */
+    box-shadow: none; /* Remove default focus shadow */
+}
+
+.contact .contact-btn {
+    background-color: #f39c12; /* Bright accent for consistency */
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact .contact-btn:hover {
+    background-color: #e67e22; /* Slightly darker shade on hover */
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+
+/* project class */
+.projects h2 {
+    font-size: 2.5rem; /* Large font size for the heading */
+    color: #f39c12; /* Use a vibrant color for the heading */
+    margin-bottom: 20px; /* Spacing below the heading */
+}
+
+
+/*for email button*/
+.btn-email-modern {
+    padding: 12px 25px;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: background 0.4s ease, box-shadow 0.4s ease, transform 0.4s ease;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.btn-email-modern:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+.btn-email-modern i {
+    font-size: 20px;
+}
+
+/* Email button animation */
+#email-btn {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.5s; /* Delays the animation to appear after the text */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Skills Section */
+    .skills {
+        padding: 60px 0;
+        background-color: #121212;
+        color: white;
+    }
+
+    .skill-card {
+        background-color: #282828;
+        border: none;
+        text-align: center;
+        padding: 30px 20px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+        transform: scale(1.05);
+    }
+
+    .skill-card i {
+        color: #f57c00;
+        margin-bottom: 15px;
+    }
