@@ -486,7 +486,7 @@ footer a:hover {
     #get-weather {
         background: linear-gradient(135deg, #ff6f61, #ff8567); /* Modern gradient for the button */
         border: none;
-        width: 20%; /* Adjusted width for a better touch target */
+        width: 50%; /* Adjusted width for a better touch target */
         font-size: 1.5rem; /* Larger font size for visibility */
         font-weight: 600; /* Bold text */
         margin-top: 20px;
