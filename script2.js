@@ -24,7 +24,9 @@
             const weatherInfo = `
                 <div class="weather-card">
                     <h3>${data.name}, ${data.sys.country}</h3>
-                    <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="Weather icon">
+                    <img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" style="width: 80px; height: 80px;" alt="Weather icon">
+                   
+
                     <p>${data.weather[0].description.toUpperCase()}</p>
                     <p><strong>Temperature:</strong> ${data.main.temp} °C</p>
                     <p><strong>Humidity:</strong> ${data.main.humidity}%</p>

@@ -422,7 +422,6 @@ footer a:hover {
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(135deg, #3c89e1, #b3cde7);
         opacity: 0.3; /* Adjust opacity for a subtle effect */
         animation: gradientAnimation 5s ease infinite; /* Animation for the background */
         z-index: 0; /* Position behind the content */
@@ -441,11 +440,11 @@ footer a:hover {
     }
 
     .weather-card {
-        background: linear-gradient(135deg, #4a90e2, #a2c2e3); /* Updated gradient for a fresh look */
+        background: linear-gradient rgba(32, 37, 40, 0.2);
         border-radius: 20px; /* Softer, rounded corners */
         padding: 30px; /* Increased padding for a spacious feel */
         margin-top: 30px; /* More spacing above the card */
-        box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Deeper shadow for a floating effect */
+        box-shadow: 0 8px 40px rgba(223, 220, 220, 0.949); /* Deeper shadow for a floating effect */
         transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition on hover */
         position: relative; /* Required for layering */
         z-index: 1; /* Ensure the card is above the animated background */
@@ -479,7 +478,7 @@ footer a:hover {
     .weather-card p {
         font-size: 1.2rem; /* Updated font size for better readability */
         font-weight: 300; /* Lighter weight for a sleek look */
-        color: #e0e0e0; /* Soft gray for secondary text */
+        color: #fffcfc; /* Soft gray for secondary text */
     }
 
     /* Button Styles for Getting Weather */
